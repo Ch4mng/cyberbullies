@@ -7,53 +7,80 @@
     <title>Help Us Fight</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <style>
+        .background{
+            background-image: url('./avengers.jpg');
+            height: 100vh;
+            background-size: cover;
+            background-repeat: 'no-repeat';
+        }
+        .translucent-bg {
+            background-color: rgba(239, 142, 109, 0.5); /* Adjust the color and opacity as needed */
+            padding: 50px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- INSERT HTML CODE BELOW -->
 
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="./home.html">Cyberbullying</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./cause.html">Cause</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./helpusfight.html">Help us Fight</a>
-                    </li>
-                </ul>
+    <div class="background">
+        
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="./home.html">Cyberbullying</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cause.html">Cause</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./helpusfight.html">Help us Fight</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container translucent-bg">
+                <div class="text-center text-light">
+                    <h1>Become A SuperHero</h1>
+                    <h5>Report any sightings of cyber bullying</h5>
+                </div>
+                <!-- Content with Cards -->
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Report any sightings of cyber bullying"></textarea>
+                </div>
+                <div class="text-right">
+                    <button type="button" class="btn btn-primary" onclick="showSubmitPrompt()">Submit</button>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div>
-            <h1>Help Us Fight</h1>
-        </div>
-        <!-- Content with Cards -->
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+        
+        
+
     </div>
+        
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script>
+        function showSubmitPrompt() {
+            alert("Thank you for your submission!");
+        }
+    </script>
 </body>
 
 </html>
